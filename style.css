@@ -1,0 +1,88 @@
+@keyframes bg{
+    0%{
+        background-color: whitesmoke;
+        color: black;
+    }
+    25%{
+        background-color: red;
+        color: wheat;
+    }
+    50%{
+        background-color: skyblue;
+    }
+    100%{
+        background-color: brown;
+    }
+}
+@keyframes h11{
+    from{
+        transform: translate(-50px);
+        background-color: brown;
+    }
+    to{
+        transform: translate(100px);   
+        background-color: black;
+    }
+
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(21, 20, 20);
+}
+.main{
+    height: 400px;
+    width: 600px;
+    background-color: brown;
+    text-align: center;
+    border-radius: 20px ;
+    animation: bg 2s  ease infinite alternate ;
+}
+h1{
+    font-size: 40px;
+    font-weight: 800;
+    color: white;
+    background-color: black;
+    padding: 20px;
+    border-radius: 20px;
+}
+.inpot{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+
+    gap: 20px;
+
+}
+.inpot input{
+    height: 50px;
+    width: 300px;
+    border-radius: 20px;
+    border: none;
+    padding: 20px;
+}
+.inpot input:focus{
+    outline: 4px solid blue;
+}
+button{
+    height: 50px;
+    width: 50px;
+    color: brown;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 30px;
+    border: 2px solid black;
+}
+#show{
+    height: 80px;
+    width: 200px;
+    background-color: black;
+    margin-left: 150px;
+    margin-top: 60px;
+    border-radius: 20px;
+    animation: h11 2s ease-in-out  infinite alternate ;
+}
